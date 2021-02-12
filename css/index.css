@@ -1,0 +1,133 @@
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headings-text {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.heading-text {
+  font-size: 30px;
+  text-align: center;
+}
+
+.opportunity {
+  height: 350px;
+  width: 30%;
+  background-color: #f8dcc1;
+  margin: 30px 20px 0 20px;
+  border-radius: 20px;
+}
+
+.opportunity-text {
+  padding: 25px 0;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.opportunity-img-box {
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  height: 250px;
+  border-radius: 20px;
+}
+
+.opportunity-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  height: inherit;
+  margin: auto;
+}
+
+.partnership-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: inherit;
+  margin: auto;
+  object-fit: cover;
+}
+
+.fix-format {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  transform: scale(0.8);
+  height: inherit;
+  margin: auto;
+  object-fit: cover;
+}
+
+.form {
+  margin: auto;
+  padding: 30px 0 0 0;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-section {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+input {
+  width: 500px;
+}
+
+textarea {
+  width: 500px;
+  height: 100px;
+}
+
+.submit-button {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+.login-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.login-button {
+    padding: 10px;
+    font-size: 20px;
+    width: 40%;
+    font-weight: bold;
+}
+
+.resize-img {
+    transform: scale(0.8);
+}
