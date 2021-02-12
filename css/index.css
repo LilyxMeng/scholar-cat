@@ -128,6 +128,8 @@ textarea {
     font-weight: bold;
 }
 
-.resize-img {
-    transform: scale(0.8);
+.fix-format {
+    transform: scale(0.75);
+    height: inherit;
+    width: inherit;
 }
