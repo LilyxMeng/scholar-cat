@@ -1,0 +1,30 @@
+.row-home {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  width: 50%;
+}
+
+.button-right {
+  padding: 10px;
+  font-size: 20px;
+  width: 40%;
+  font-weight: bold;
+  border-radius: 10px;
+  border-width: 1px;
+  margin-left: 20%;
+}
+
+.button-left {
+  padding: 10px;
+  font-size: 20px;
+  width: 40%;
+  font-weight: bold;
+  border-radius: 10px;
+  border-width: 1px;
+}
