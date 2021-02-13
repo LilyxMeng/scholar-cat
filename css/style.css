@@ -130,3 +130,8 @@ textarea {
   height: 60px;
   color: white;
 }
+
+button:hover {
+  background-color: #D3D3D3;
+  cursor: pointer;
+}
