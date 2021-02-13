@@ -8,6 +8,15 @@
   color: black;
 }
 
+a,
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: white;
+}
+
 .content {
   width: 90%;
   margin: auto;
