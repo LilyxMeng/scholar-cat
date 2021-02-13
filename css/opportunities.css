@@ -1,0 +1,39 @@
+.filter {
+  padding: 10px;
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+
+.filter-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 25%;
+}
+
+.label {
+  font-size: 20px;
+  padding-top: 3px;
+  white-space: nowrap;
+}
+
+input[type="checkbox"] {
+  zoom: 1.7;
+  padding-top: 3px;
+}
+
+.opportunity-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+}
+
+.opportunity-card {
+  height: 350px;
+  background-color: #f8dcc1;
+  margin: 30px 20px 0 20px;
+  border-radius: 20px;
+}

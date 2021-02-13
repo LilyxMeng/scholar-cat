@@ -49,6 +49,7 @@
   width: inherit;
   height: inherit;
   margin: auto;
+  object-fit: contain;
 }
 
 .partnership-img {
@@ -115,23 +116,23 @@ textarea {
 }
 
 .login-buttons {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .login-button {
-    padding: 10px;
-    font-size: 20px;
-    width: 40%;
-    font-weight: bold;
-    border-radius: 10px;
-    border-width: 1px;
+  padding: 10px;
+  font-size: 20px;
+  width: 40%;
+  font-weight: bold;
+  border-radius: 10px;
+  border-width: 1px;
 }
 
 .fix-format {
-    transform: scale(0.75);
-    height: inherit;
-    width: inherit;
+  transform: scale(0.75);
+  height: inherit;
+  width: inherit;
 }
