@@ -23,29 +23,30 @@
     </nav>
 
     <div class="nav-bar">
+        <h1 class="web-title">Choose which opportunities to hide below</h1>
         <div class="filter">
             <p>Type</p>
             <div class="filter-section">
-                <input type="checkbox" value="jobs">
+                <input type="checkbox" value="jobs" class="checkbox1" onclick="jobs()">
                 <label class="label">Jobs</label>
             </div>
             <div class="filter-section">
-                <input type="checkbox" value="internships">
+                <input type="checkbox" value="interns" class="checkbox2" onclick="interns()">
                 <label class="label">Internships</label>
             </div>
             <div class="filter-section">
-                <input type="checkbox" value="volunteering">
+                <input type="checkbox" value="volunteering" class="checkbox3" onclick="volunteering()">
                 <label class="label">Volunteering</label>
             </div>
         </div>
         <div class="filter">
             <p>Availability</p>
             <div class="filter-section">
-                <input type="checkbox" value="inPerson">
+                <input type="checkbox" value="inPerson" class="checkbox4" onclick="inPerson()">
                 <label class="label">In Person</label>
             </div>
             <div class="filter-section">
-                <input type="checkbox" value="virtual">
+                <input type="checkbox" value="virtual" class="checkbox5" onclick="virtual()">
                 <label class="label">Virtual</label>
             </div>
         </div>
@@ -53,21 +54,22 @@
 
     <div class="opportunity-cards">
         <!-- jobs in person -->
-        <div class="opportunity-card">
+
+        <div class="opportunity-card" id="jobInPerson1">
             <p class="opportunity-text"><a href="jobinperson1.html">Job In Person 1</a></p>
             <div class="opportunity-img-box">
                 <img class="opportunity-img" src="images/job-inperson-1.svg">
             </div>
         </div>
 
-        <div class="opportunity-card">
+        <div class="opportunity-card" id="jobInPerson2">
             <p class="opportunity-text"><a href="">Job In Person 2</a></p>
             <div class="opportunity-img-box">
                 <img class="opportunity-img" src="images/job-inperson-2.png">
             </div>
         </div>
 
-        <div class="opportunity-card">
+        <div class="opportunity-card" id="jobInPerson3">
             <p class="opportunity-text"><a href="">Job In Person 3</a></p>
             <div class="opportunity-img-box">
                 <img class="opportunity-img" src="images/job-inperson-3.png">
@@ -75,21 +77,21 @@
         </div>
 
         <!-- jobs virtual -->
-        <div class="opportunity-card">
+        <div class="opportunity-card" id="jobVirtual1">
             <p class="opportunity-text"><a href="">Job Virtual 1</a></p>
             <div class="opportunity-img-box">
                 <img class="opportunity-img" src="images/job-virtual-1.png">
             </div>
         </div>
 
-        <div class="opportunity-card">
+        <div class="opportunity-card" id="jobVirtual2">
             <p class="opportunity-text"><a href="">Job Virtual 2</a></p>
             <div class="opportunity-img-box">
                 <img class="opportunity-img" src="images/job-virtual-2.png">
             </div>
         </div>
 
-        <div class="opportunity-card">
+        <div class="opportunity-card" id="jobVirtual3">
             <p class="opportunity-text"><a href="">Job Virtual 3</a></p>
             <div class="opportunity-img-box">
                 <img class="opportunity-img" src="images/job-virtual-3.png">
@@ -97,43 +99,43 @@
         </div>
 
         <!-- interns in person -->
-        <div class="opportunity-card">
-            <p class="opportunity-text"><a href="">Intern In Person 1</a></p>
+        <div class="opportunity-card" id="internInPerson1">
+            <p class="opportunity-text"><a href="">Internship In Person 1</a></p>
             <div class="opportunity-img-box">
                 <img class="opportunity-img" src="images/intern-inperson-1.png">
             </div>
         </div>
 
-        <div class="opportunity-card">
-            <p class="opportunity-text"><a href="">Intern In Person 2</a></p>
+        <div class="opportunity-card" id="internInPerson2">
+            <p class="opportunity-text"><a href="">Internship In Person 2</a></p>
             <div class="opportunity-img-box">
                 <img class="opportunity-img" src="images/intern-inperson-2.png">
             </div>
         </div>
 
-        <div class="opportunity-card">
-            <p class="opportunity-text"><a href="">Intern In Person 3</a></p>
+        <div class="opportunity-card" id="internInPerson3">
+            <p class="opportunity-text"><a href="">Internship In Person 3</a></p>
             <div class="opportunity-img-box">
                 <img class="opportunity-img" src="images/intern-inperson-3.png">
             </div>
         </div>
 
         <!-- interns virtual -->
-        <div class="opportunity-card">
+        <div class="opportunity-card" id="internVirtual1">
             <p class="opportunity-text"><a href="">Internship Virtual 1</a></p>
             <div class="opportunity-img-box">
                 <img class="opportunity-img" src="images/intern-virtual-1.png">
             </div>
         </div>
 
-        <div class="opportunity-card">
+        <div class="opportunity-card" id="internVirtual2">
             <p class="opportunity-text"><a href="">Internship Virtual 2</a></p>
             <div class="opportunity-img-box">
                 <img class="opportunity-img" src="images/intern-virtual-2.png">
             </div>
         </div>
 
-        <div class="opportunity-card">
+        <div class="opportunity-card" id="internVirtual3">
             <p class="opportunity-text"><a href="">Internship Virtual 3</a></p>
             <div class="opportunity-img-box">
                 <img class="opportunity-img" src="images/intern-virtual-3.png">
@@ -141,21 +143,21 @@
         </div>
 
         <!-- volunteer in person -->
-        <div class="opportunity-card">
+        <div class="opportunity-card" id="volunteerInPerson1">
             <p class="opportunity-text"><a href="">Volunteer In Person 1</a></p>
             <div class="opportunity-img-box">
                 <img class="opportunity-img" src="images/volunteer-inperson-1.png">
             </div>
         </div>
 
-        <div class="opportunity-card">
+        <div class="opportunity-card" id="volunteerInPerson2">
             <p class="opportunity-text"><a href="">Volunteer In Person 2</a></p>
             <div class="opportunity-img-box">
                 <img class="opportunity-img" src="images/volunteer-inperson-2.png">
             </div>
         </div>
 
-        <div class="opportunity-card">
+        <div class="opportunity-card" id="volunteerInPerson3">
             <p class="opportunity-text"><a href="">Volunteer In Person 3</a></p>
             <div class="opportunity-img-box">
                 <img class="opportunity-img" src="images/volunteer-inperson-3.png">
@@ -163,30 +165,29 @@
         </div>
 
         <!-- volunteer virtual -->
-        <div class="opportunity-card">
+        <div class="opportunity-card" id="volunteerVirtual1">
             <p class="opportunity-text"><a href="">Volunteer Virtual 1</a></p>
             <div class="opportunity-img-box">
                 <img class="opportunity-img" src="images/volunteer-virtual-1.png">
             </div>
         </div>
 
-        <div class="opportunity-card">
+        <div class="opportunity-card" id="volunteerVirtual2">
             <p class="opportunity-text"><a href="">Volunteer Virtual 2</a></p>
             <div class="opportunity-img-box">
                 <img class="opportunity-img" src="images/volunteer-virtual-2.png">
             </div>
         </div>
 
-        <div class="opportunity-card">
+        <div class="opportunity-card" id="volunteerVirtual3">
             <p class="opportunity-text"><a href="">Volunteer Virtual 3</a></p>
             <div class="opportunity-img-box">
                 <img class="opportunity-img" src="images/volunteer-virtual-3.png">
             </div>
         </div>
-
     </div>
 
-
+    <script src="js/opportunities.js"></script>
 
 </body>
 

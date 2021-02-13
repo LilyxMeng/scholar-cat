@@ -75,3 +75,9 @@ a:hover {
   text-decoration: none;
   color: white;
 }
+
+.web-title {
+  font-size: 28px;
+  padding: 10px;
+  text-decoration: underline;
+}
