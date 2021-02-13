@@ -1,3 +1,13 @@
+a,
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: black;
+}
+
 .heading {
   display: flex;
   justify-content: center;
@@ -71,40 +81,6 @@
   height: inherit;
   margin: auto;
   object-fit: cover;
-}
-
-.form {
-  margin: auto;
-  padding: 30px 0 0 0;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-}
-
-.form-section {
-  margin-bottom: 20px;
-}
-
-.form-label {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.form-input {
-  font-size: 20px;
-  padding: 10px;
-  border-radius: 10px;
-  border-width: 1px;
-}
-
-input {
-  width: 500px;
-}
-
-textarea {
-  width: 500px;
-  height: 100px;
 }
 
 .submit-button {
