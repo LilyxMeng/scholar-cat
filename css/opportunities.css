@@ -1,3 +1,13 @@
+.nav-link,
+.nav-link:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-link:hover {
+  color: black;
+}
+
 .filter {
   padding: 10px;
   display: flex;
@@ -36,4 +46,42 @@ input[type="checkbox"] {
   background-color: #f8dcc1;
   margin: 30px 20px 0 20px;
   border-radius: 20px;
+}
+
+.opportunity-img-box {
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  height: 250px;
+  border-radius: 20px;
+}
+
+.opportunity-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  height: inherit;
+  margin: auto;
+  object-fit: contain;
+}
+
+.opportunity-text {
+  padding: 25px 0;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
 }

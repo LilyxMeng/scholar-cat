@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- stylesheets -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/loginhome.css">
     <link rel="stylesheet" href="css/profile.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -20,21 +19,24 @@
 <body>
     <nav>
         <div class="links">
-            <a href="loginhome.html">Back to Home</a>
+            <a class="nav-link" href="loginhome.html">Back to Home</a>
             <p class="web-name">My Profile</p>
-            <a href="opportunities.html">Opportunities</a>
+            <a class="nav-link" href="opportunities.html">Opportunities</a>
         </div>
     </nav>
 
     <div class="nav-bar">
         <div class="nav-links">
-            <a href="profile.html" style="color:black">My Profile</a>
-            <a href="account.html" style="color:black">My Account</a>
+            <a class="nav-link1" href="profile.html">My Profile</a>
+            <a class="nav-link1" href="account.html">My Account</a>
         </div>
     </div>
 
     <img class="img" src="images/pfp.png">
     <div class="form" style="margin-bottom: 20px;">
+        <div class="form-section">
+            <input class="form-input" type="text" placeholder="Full Name">
+        </div>
         <div class="form-section">
             <input class="form-input" type="text" placeholder="School">
         </div>
@@ -43,7 +45,7 @@
         </div>
         <div class="form-section">
             <p class="form-label">About</p>
-            <textarea class="form-input" type="text" placeholder="About"></textarea>
+            <textarea class="form-input" type="text" placeholder="What are your skills and interests?"></textarea>
         </div>
         <div class="form-section">
             <p class="form-label">Socials</p>
