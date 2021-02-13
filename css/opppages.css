@@ -1,0 +1,43 @@
+.content {
+  width: 90%;
+  margin: auto;
+  padding-top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.opp-img {
+    width: 50%;
+}
+
+.opp-info {
+    margin: -10% 10% 0 -10%;
+    width: 50%;
+}
+
+.opp-text {
+  background-color: #f8dcc1;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.opp-title {
+    padding-bottom: 20px;
+}
+
+.opp-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.opp-button {
+    width: 112%;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    border-width: 1px;
+    margin: auto;
+}
