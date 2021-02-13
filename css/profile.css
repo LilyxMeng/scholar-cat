@@ -1,0 +1,19 @@
+.nav-bar {
+  background-color: #add8e6;
+  width: 100%;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+
+.social-input {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border-width: 1px;
+  width: 90%;
+}
+
+.icon {
+  transform: scale(1.5);
+  margin-right: 5%;
+}
