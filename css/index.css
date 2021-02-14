@@ -112,3 +112,23 @@ a:hover {
   height: inherit;
   width: inherit;
 }
+
+.ar-link, .ar-link:visited {
+  text-decoration: underline;
+  color: black;
+}
+
+.ar-link:hover {
+  color: #63beff;
+}
+
+.ar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin:auto;
+  margin-bottom: -30px;
+}
+
+
