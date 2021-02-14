@@ -135,3 +135,9 @@ button:hover {
   background-color: #D3D3D3;
   cursor: pointer;
 }
+
+.rounded-button {
+  background-color: #D3D3D3;
+  padding: 7px 15px;
+  border-radius: 10px;
+}
