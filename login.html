@@ -1,44 +1,142 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- stylesheets -->
+    <title>Firebase Login</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/accounts.css">
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    <title>Scholar Cat Login</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 
 <body>
-    <nav>
-        <div class="links">
-            <a class="nav-link" href="index.html">Back to Home</a>
-            <p class="web-name">Login</p>
-            <a class="nav-link" href="register.html">Here to Register?</a>
+    <div id="login_div" class="main-div">
+        <nav>
+            <div class="links">
+                <a class="nav-link" href="index.html">Back to Home</a>
+                <p class="web-name">Login</p>
+                <a class="nav-link" href="register.html">Here to Register?</a>
+            </div>
+        </nav>
+
+        <section>
+            <h1 class="web-title">Access Your Account ⬇️</h1>
+            <form class="form">
+                <div class="form-section">
+                    <input class="form-input" id="email_field" type="email" placeholder="Email">
+                </div>
+                <div class="form-section">
+                    <input class="form-input" id="password_field" type="password" placeholder="Password">
+                </div>
+                <button class="submit-button" type="button" name="submit" onclick="login()">Login</button>
+            </form>
+        </section>
+
+        <div style="text-align: center;">
+            <p>Login with email: scholarcat@gmail.com and password: scholarcat</p>
         </div>
-    </nav>
-
-    <section>
-        <h1 class="web-title">Access Your Account ⬇️</h1>
-        <form class="form">
-            <div class="form-section">
-                <input class="form-input" type="text" placeholder="Email">
-            </div>
-            <div class="form-section">
-                <input class="form-input" type="password" placeholder="Password">
-            </div>
-            <button class="submit-button" type="button" name="submit">Login</button>
-        </form>
-    </section>
-
-    <div style="text-align: center;">
-        <p>View the logged in site <a class="extra-link"
-                href="loginhome.html">here</a></p>
     </div>
+
+    <div id="user_div" class="loggedin-div">
+        <nav>
+            <div class="links">
+                <p class="web-name rounded-button">Scholar Cat</p>
+                <a href="profile.html">Profile</a>
+                <a href="opportunities.html">Opportunities</a>
+                <a href="map.html">Map</a>
+                <a href="#" onclick="logout()">Logout</a>
+            </div>
+        </nav>
+
+        <section id="intro">
+            <div class="heading">
+                <div class="headings-text">
+                    <h1 class="heading-text">Welcome Back!</h1>
+                </div>
+                <img src="images/welcomeback.gif">
+            </div>
+        </section>
+
+        <section id="profile">
+            <h1 class="section-title">Profile</h1>
+            <p class="section-text">Would you like to update your profile today? Keep employers updated
+                on your adventures and interests.
+            </p>
+            <div class="row-home">
+                <div class="section">
+                    <img class="img" src="images/profile.png">
+                </div>
+                <div class="section">
+                    <button class="button-right" onClick="window.location='profile.html';">Profile</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="opportunities">
+            <h1 class="section-title">Opportunities</h1>
+            <p class="section-text">Hmm, did you come here to discover more opportunities? Scholar
+                Cat is happy to help you! Choose from a selection of our 🧑‍💻
+                and in 🧍 opportunities!
+            </p>
+            <div class="row-home">
+                <div class="section">
+                    <button class="button-right" onclick="logout()">Opportunities</button>
+                </div>
+                <div class="section">
+                    <img class="opp-img" src="images/opportunities.png">
+                </div>
+            </div>
+        </section>
+
+        <section id="map">
+            <h1 class="section-title">Map</h1>
+            <p class="section-text">If you would like to choose opportunities based on your location,
+                Scholar Cat’s got you! Check out our interactive map by clicking
+                the button below ⬇️
+            </p>
+            <div class="row-home">
+                <div class="section">
+                    <img class="map-img" src="images/map.png">
+                </div>
+                <div class="section">
+                    <button class="button-right" onClick="window.location='map.html';">Map</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="logout">
+            <h1 class="section-title">Logout</h1>
+            <p class="section-text">… would you like to logout?</p>
+            <div class="row-home">
+                <div class="section">
+                    <button class="button-right" onclick="logout()">Logout</button>
+                </div>
+                <div class="section">
+                    <img class="logout-img" src="images/logout.gif">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var firebaseConfig = {
+            apiKey: "AIzaSyBFRAVWpxRUp0zhoZ5ZwsIVYbcXTw-cT6c",
+            authDomain: "scholar-cat-f01fd.firebaseapp.com",
+            projectId: "scholar-cat-f01fd",
+            storageBucket: "scholar-cat-f01fd.appspot.com",
+            messagingSenderId: "115580632361",
+            appId: "1:115580632361:web:85c8d2793215bdc2de4b38",
+            measurementId: "G-9TTLS7GRY0"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <script src="js/login.js"></script>
+
 </body>
 
 </html>

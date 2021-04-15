@@ -30,18 +30,17 @@
 }
 
 .opp-img {
-    margin-right: 18%;
-    margin-top: -28px;
-    margin-bottom: -35px;
+  margin-left: -40px;
+  margin-top: -50px;
+  margin-bottom: -50px;
 }
 
 .map-img {
   transform: scale(0.9);
-  margin-top:-40px;
+  margin-top: -40px;
 }
 
 .logout-img {
-  transform: scale(0.6);
-  margin-top: -90px;
-  margin-bottom: -90px;
+  transform: scale(0.9);
+  margin-top: -50px;
 }
